@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Aula</title>
+    <style>
+        body { font-family: sans-serif; max-width: 600px; margin: 20px auto; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input, select, textarea { width: 100%; padding: 8px; box-sizing: border-box; }
+        button { padding: 10px 15px; background-color: #007bff; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Salvar Nova Aula</h1>
+    <!--
+        O atributo 'action' deve apontar para o script do lado do servidor (ex: save_lesson.php)
+        O atributo 'method' define como os dados serão enviados (POST é recomendado para dados sensíveis)
+    -->
+    <form action="save_lesson.php" method="POST">
+        <div class="form-group">
+            <label for="titulo">Título da Aula:</label>
+            <input type="text" id="titulo" name="titulo" required>
+        </div>
+        <div class="form-group">
+            <label for="professor">Professor(a):</label>
+            <input type="text" id="professor" name="professor" required>
+        </div>
+        <div class="form-group">
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+        </div>
+        <div class="form-group">
+            <label for="topico">Tópico/Assunto:</label>
+            <select id="topico" name="topico">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="backend">Backend</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="descricao">Descrição/Conteúdo:</label>
+            <textarea id="descricao" name="descricao" rows="5"></textarea>
+        </div>
+        <button type="submit">Salvar Aula</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,110 @@
+/* RESET E BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+/* ESTILO DO CABEÇALHO E NAVEGAÇÃO */
+header {
+    background-color: #1f2933;
+    color: white;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 22px;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav .menu li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding: 40px;
+    background: url(icone-kukula.png) center;
+}
+
+/* ESTILO DA PÁGINA DE MATERIAIS DIDÁTICOS */
+.materiais {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.materiais .descricao {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.lista-materiais {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.material {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.material:hover {
+    background-color: #2A003F;
+    color: white;
+}
+.material h3 {
+    margin-bottom: 10px;
+}
+
+.material p {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.material a {
+    text-decoration: none;
+    color: #1f2933;
+    font-weight: bold;
+}
+
+.material a:hover {
+    text-decoration: underline;
+    color: white;
+}
+/* ESTILO DO RODAPÉ */
+footer {
+    background-color: #1f2933;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}

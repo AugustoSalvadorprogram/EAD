@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url(icone-kukula.png) no-repeat center bottom/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form  {
+    box-shadow: 2px 20px 20px 5px #2a003f2b;
+    max-width: 500px;
+    margin: auto;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #2A003F;
+    color: white;
+}
+
+form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20pt;
+    font-weight: bolder;
+}
+
+form p {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 16pt;
+    color: #fff;
+}
+
+form input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #fff;
+    color: #2A003F;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+form a {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}

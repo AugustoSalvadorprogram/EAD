@@ -21,8 +21,8 @@ form  {
     padding: 50px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    background-color: #2A003F;
-    color: white;
+    background-color: #ffffff;
+    color: #2A003F;
 }
 
 form h1 {
@@ -33,10 +33,10 @@ form h1 {
 }
 
 form p {
-    text-align: center;
+        text-align: center;
     margin-bottom: 25px;
     font-size: 16pt;
-    color: #fff;
+    color: #2A003F;
 }
 
 form input {
@@ -51,8 +51,8 @@ form button {
     width: 100%;
     padding: 10px;
     border: none;
-    background: #fff;
-    color: #2A003F;
+    background: #2A003F;
+    color: #ffffff;
     font-weight: bold;
     cursor: pointer;
     border-radius: 4px;
@@ -63,10 +63,8 @@ form button:hover {
     transition: all 0.3s ease-in-out;
 }
 
-form a {
-    display: block;
+display: block;
     margin-top: 10px;
-    color: #fff;
+    color: #2A003F;
     text-decoration: none;
     text-align: center;
-}
